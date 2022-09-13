@@ -282,7 +282,7 @@ local function CreateElements()
     CreateZone("vehicle")
 end
 
-local function BackDoorsOpen(vehicle) -- This is hardcoded for the rumpo currently
+local function BackDoorsOpen(vehicle)
     return GetVehicleDoorAngleRatio(vehicle, 2) > 0.0 and GetVehicleDoorAngleRatio(vehicle, 3) > 0.0
 end
 

@@ -6,7 +6,7 @@ For this script to function correctly, follow these steps:
 
 1.) Download and rename the folder, remove the "-main" from the end of it.
 
-2.) Add "ensure qb-gopostal" to your server.cfg (if this resource is not places inside of an already ensured foler.)
+2.) Add "ensure qb-gopostal" to your server.cfg (if this resource is not placed inside of an already ensured foler.)
 
 3.) Add the following to your qb-core/shared/jobs.lua within the QBShared.Jobs area:
 

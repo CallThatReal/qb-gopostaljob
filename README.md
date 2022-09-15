@@ -1,7 +1,7 @@
 # qb-gopostal
 GoPostal Job For QB-Core
 
-~pre-release version 0.0.1, small updates to come, mostly config chnages~
+-pre-release version 0.0.1, small updates to come, mostly config chnages-
 
 For this script to function correctly, follow these steps:
 

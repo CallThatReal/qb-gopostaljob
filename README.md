@@ -11,30 +11,21 @@ For this script to function correctly, follow these steps:
 
 3.) Add the following to your qb-core/shared/jobs.lua within the QBShared.Jobs area:
 
-    ['gopostal'] = {
-		label = 'GoPostal',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Package Delivery Driver',
-                payment = 250
-            },
-        },
-	},
+    gopostal = { label = 'GoPostal Driver', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
 
 
-4.) (Optional, if you intend for this to be a "public" job) Edit the following in your qb-cityhall/server/main.lua:
+4.) (Optional, if you intend for this to be a "public" job) Edit the following in your qb-cityhall/config.lua:
 
-    local availableJobs = {
-    ["trucker"] = "Trucker",
-    ["taxi"] = "Taxi",
-    ["tow"] = "Tow Truck",
-    ["reporter"] = "News Reporter",
-    ["garbage"] = "Garbage Collector",
-    ["bus"] = "Bus Driver",
-    ["gopostal"] = "GoPostal Driver",  --add this
-    }
+    Config.AvailableJobs = {                                     -- Only used when not using qb-jobs.
+    ['trucker'] = { ['label'] = 'Trucker', ['isManaged'] = false },
+    ['taxi'] = { ['label'] = 'Taxi', ['isManaged'] = false },
+    ['tow'] = { ['label'] = 'Tow Truck', ['isManaged'] = false },
+    ['reporter'] = { ['label'] = 'News Reporter', ['isManaged'] = false },
+    ['garbage'] = { ['label'] = 'Garbage Collector', ['isManaged'] = false },
+    ['bus'] = { ['label'] = 'Bus Driver', ['isManaged'] = false },
+    ['hotdog'] = { ['label'] = 'Hot Dog Stand', ['isManaged'] = false },
+    ['gopostal'] = { ['label'] = 'GoPostal Driver', ['isManaged'] = false } --ADD THIS!!
+}
 
 
 

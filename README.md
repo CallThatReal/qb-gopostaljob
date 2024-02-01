@@ -27,5 +27,8 @@ For this script to function correctly, follow these steps:
     ['gopostal'] = { ['label'] = 'GoPostal Driver', ['isManaged'] = false } --ADD THIS!!
 }
 
+5.) (Optional, but some animations depend on this) Add scully_emotemenu to your server:
+    https://github.com/Scullyy/scully_emotemenu?tab=readme-ov-file
+
 
 
